@@ -4,7 +4,7 @@ import atf.api.Person
 import atf.api.PersonService
 import org.springframework.stereotype.Service
 
-@Service
+@Service(value = "personService")
 class GroovyPersonService implements PersonService {
     @Override
     Person create(Map<String, Object> stringObjectMap) {

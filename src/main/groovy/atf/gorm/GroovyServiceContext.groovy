@@ -30,7 +30,7 @@ class GroovyServiceContext implements ServiceContext {
 
     @Override
     PersonService getPersonService() {
-        return ctx.getBean(GroovyPersonService.class)
+        return ctx.getBean("personService")
     }
 
 
