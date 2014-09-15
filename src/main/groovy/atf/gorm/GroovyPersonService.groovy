@@ -18,7 +18,7 @@ class GroovyPersonService implements PersonService {
 
     @Override
     Person get(Long id) {
-        return Person.get(id)
+        return GroovyPerson.get(id)
     }
 
     @Override

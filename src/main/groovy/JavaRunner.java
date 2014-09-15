@@ -1,9 +1,6 @@
 import atf.api.Person;
 import atf.api.PersonService;
 import atf.api.ServiceContext;
-import atf.gorm.GroovyServiceContext;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +30,7 @@ public class JavaRunner {
     }
 
     static ServiceContext getServiceContext() {
-        return GroovyServiceContext.getServiceContext();
+        return atf.gorm.GroovyServiceContext.getServiceContext();
     }
 
     static void println(String s) {
